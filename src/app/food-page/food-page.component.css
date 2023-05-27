@@ -1,0 +1,100 @@
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 51px;
+}
+
+.container > *{
+min-width: 425px;
+max-width: 680px;
+}
+
+img{
+	border-radius: 51px;
+	flex:1 0;
+	object-fit: cover;
+	height: 450px;
+	margin: 17px;
+}
+
+.details{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex:1 0;
+	border-radius: 51px;
+	padding: 34px;
+	color: black;
+	margin-left: 17px;
+}
+
+.details .header{
+	display: flex;
+	justify-content: space-between;
+}
+
+.details .name{
+	font-size: 34px;
+	font-weight: bold;
+}
+
+.details .favorite{
+	color: #e72929;
+	font-size: 42.5px;
+}
+
+.details .favorite.not{
+	color: gray;
+}
+
+.details .origins{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 17px 0;
+}
+
+.details .origins > span{
+	padding: 8.5px;
+	font-size: 20.4px;
+	margin: 8.5px 8.5px 8.5px 0;
+	border-radius: 34px;
+	background-color: aliceblue;
+}
+
+.details .cook-time{
+	margin-top: 17px;
+}
+
+.details .cook-time span{
+	padding: 10.2px 34px 10.2px 0;
+	border-radius: 170px;
+	font-size: 22.1px;
+}
+
+.details .price{
+	font-size: 30.6px;
+	margin: 34px 34px 34px 0;
+	color: green;
+}
+
+.details .price::before{
+	content: "Price: ";
+	color: darkgrey;
+}
+
+.details button{
+	color: white;
+	background: #e72929;
+	border: none;
+	font-size: 20.4px;
+	padding: 17px;
+	border-radius: 170px;
+	outline: none;
+}
+
+.details button:hover{
+	opacity: .9;
+	cursor: pointer;
+}
